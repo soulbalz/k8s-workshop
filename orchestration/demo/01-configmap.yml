@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-env-configmap
+  namespace: default
+data:
+  APP_NAME: DEMO
