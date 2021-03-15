@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo
-  namespace: default
+  namespace: demo
   labels:
     app: demo
 spec:
@@ -18,7 +18,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: demo
-          image: asia.gcr.io/core-287413/demo:latest
+          image: soulister/demo-app:latest
           envFrom:
             - secretRef:
                 name: demo-env-secret
